@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--gray1: hsl(0, 0%, 55%);
+	--gray2: hsl(0, 0%, 41%);
+	font-size: 15px;
+	font-family: "Alata", sans-serif;
+	/* font-family: "Josefin Sans", sans-serif; */
+}
+
+body {
+	width: 100%;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+#first-section {
+	color: white;
+	background-image: url(./images/mobile/image-hero.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top;
+}
+
+.first-section-container {
+	width: min(100% - 2.5em, 74em);
+	margin-inline: auto;
+	height: 43.625rem;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: min-content 1fr;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4rem;
+}
+
+.navbar > ul {
+	display: flex;
+	color: white;
+	align-items: center;
+	gap: 2rem;
+}
+
+.nav-options {
+	display: none !important;
+}
+.nav-menu-btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 21px;
+	height: 21px;
+}
+
+.main-heading {
+	color: white;
+	font-family: "Josefin Sans", sans-serif;
+	text-transform: uppercase;
+	font-size: clamp(1.55rem, 5vw, 2.55rem);
+	width: fit-content;
+	max-width: 43.625rem;
+	max-height: 20rem;
+	border: 2px solid white;
+	padding: 0 2rem;
+	letter-spacing: 0.25rem;
+	font-weight: 300;
+	align-self: center;
+}
+
+@media (min-width: 450px) {
+	#first-section {
+		background-image: url(./images/desktop/image-hero.jpg);
+	}
+}
+
+@media (min-width: 789px) {
+	.nav-options {
+		display: flex !important;
+	}
+	.nav-menu-btn {
+		display: none !important;
+	}
+}
