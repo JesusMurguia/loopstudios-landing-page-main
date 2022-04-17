@@ -9,7 +9,7 @@ ul {
 	margin: 0;
 	padding: 0;
 }
-
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
 :root {
 	--gray1: hsl(0, 0%, 55%);
 	--gray2: hsl(0, 0%, 41%);
@@ -77,7 +77,6 @@ body {
 	border: 2px solid white;
 	padding: 0 2rem;
 	letter-spacing: 0.25rem;
-	font-weight: 300;
 	align-self: center;
 }
 
@@ -119,6 +118,100 @@ body {
 	text-align: center;
 	color: var(--gray1);
 }
+#third-section {
+	margin-block: 6rem;
+}
+
+.third-section-container {
+	width: min(100% - 2.5em, 74em);
+	margin-inline: auto;
+	display: grid;
+	grid-template-rows: repeat(2, min-content);
+}
+
+.third-section-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
+}
+.third-section-header h1 {
+	font-size: 2.5rem;
+	font-family: "Josefin Sans", sans-serif;
+	margin-block: 4rem;
+	text-align: center;
+}
+.btn {
+	color: black;
+	padding: 0.5rem 2rem;
+	letter-spacing: 0.25rem;
+	border: 2px solid black;
+	background-color: white;
+}
+
+.creation-grid {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-gap: 2rem;
+	margin-block: 2rem;
+	grid-template-rows: repeat(8, 125px);
+}
+
+.card {
+	width: 100%;
+	position: relative;
+	background-position: top;
+	background-size: cover;
+	z-index: 34;
+}
+
+.creation-grid h3 {
+	position: absolute;
+	z-index: 33;
+	color: white;
+	font-family: "Josefin Sans", sans-serif;
+	bottom: 5%;
+	left: 5%;
+	right: 65%;
+	font-size: 1.25rem;
+}
+
+.see-all {
+	display: none !important;
+}
+
+#deep-earth {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-deep-earth.jpg);
+}
+#night-arcade {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-night-arcade.jpg);
+}
+#soccer-team {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-soccer-team.jpg);
+}
+#the-grid {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-grid.jpg);
+}
+#from-above {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-from-above.jpg);
+}
+#pocket-borealis {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/desktop/image-pocket-borealis.jpg);
+}
+#curiosity {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-curiosity.jpg);
+}
+#fisheye {
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+		url(./images/mobile/image-fisheye.jpg);
+}
 
 @media (min-width: 450px) {
 	#first-section {
@@ -152,5 +245,75 @@ body {
 	}
 	.second-section-container h1 {
 		font-size: 3rem;
+	}
+	.third-section-header h1 {
+		text-align: center;
+	}
+	.see-all {
+		display: flex !important;
+	}
+	.third-section-header {
+		justify-content: space-between;
+	}
+
+	.creation-grid {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(4, 200px);
+	}
+	.card {
+		background-size: cover;
+	}
+}
+
+@media (min-width: 1200px) {
+	.creation-grid {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 450px);
+	}
+	.card {
+		background-size: contain;
+	}
+	.creation-grid h3 {
+		position: absolute;
+		z-index: 33;
+		color: white;
+		font-family: "Josefin Sans", sans-serif;
+		bottom: 5%;
+		left: 15%;
+		right: 15%;
+		font-size: 2rem;
+		font-weight: 300;
+	}
+	#deep-earth {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-deep-earth.jpg);
+	}
+	#night-arcade {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-night-arcade.jpg);
+	}
+	#soccer-team {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-soccer-team.jpg);
+	}
+	#the-grid {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-grid.jpg);
+	}
+	#from-above {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-from-above.jpg);
+	}
+	#pocket-borealis {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-pocket-borealis.jpg);
+	}
+	#curiosity {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-curiosity.jpg);
+	}
+	#fisheye {
+		background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
+			url(./images/desktop/image-fisheye.jpg);
 	}
 }
