@@ -85,9 +85,49 @@ body {
 	margin-block: 2.25rem;
 }
 
+#second-section {
+	margin-block: 6rem;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+#second-section img {
+	max-width: 100%;
+	height: auto;
+}
+
+.second-section-container {
+	width: min(100% - 2.5em, 74em);
+	margin-inline: auto;
+	display: grid;
+	grid-template-rows: repeat(2, fit-content);
+}
+
+.second-section-container > .content {
+	background-color: white;
+	padding: 2rem;
+}
+
+.second-section-container h1 {
+	text-align: center;
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 2rem;
+	letter-spacing: 0.125rem;
+	text-transform: uppercase;
+}
+
+.second-section-container p {
+	text-align: center;
+	color: var(--gray1);
+}
+
 @media (min-width: 450px) {
 	#first-section {
 		background-image: url(./images/desktop/image-hero.jpg);
+	}
+	#second-section img {
+		content: url(./images/desktop/image-interactive.jpg);
+		grid-column: 1 / 5;
+		grid-row: 1/10;
 	}
 }
 
@@ -97,5 +137,20 @@ body {
 	}
 	.nav-menu-btn {
 		display: none !important;
+	}
+	.second-section-container > .content {
+		background-color: white;
+		padding: 5rem 0 0 5.5rem;
+		grid-column: 4 / 9;
+		grid-row: 4 / 10;
+		max-width: 35.5rem;
+		text-align: start;
+	}
+	.second-section-container p,
+	.second-section-container h1 {
+		text-align: start;
+	}
+	.second-section-container h1 {
+		font-size: 3rem;
 	}
 }
