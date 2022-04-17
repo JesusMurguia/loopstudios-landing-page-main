@@ -70,7 +70,7 @@ body {
 	color: white;
 	font-family: "Josefin Sans", sans-serif;
 	text-transform: uppercase;
-	font-size: clamp(1.55rem, 5vw, 2.55rem);
+	font-size: clamp(1.55rem, 5vw, 3rem);
 	width: fit-content;
 	max-width: 43.625rem;
 	max-height: 20rem;
@@ -79,6 +79,10 @@ body {
 	letter-spacing: 0.25rem;
 	font-weight: 300;
 	align-self: center;
+}
+
+.main-heading > h1 {
+	margin-block: 2.25rem;
 }
 
 @media (min-width: 450px) {
