@@ -9,6 +9,7 @@
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="style.css" />
+		<script src="./index.js"></script>
 		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
 		<title>Frontend Mentor | Loopstudios landing page</title>
@@ -19,13 +20,26 @@
 				<nav class="navbar">
 					<img src="./images/logo.svg" alt="logo" />
 					<ul class="nav-options">
-						<li>About</li>
-						<li>Carreers</li>
-						<li>Events</li>
-						<li>Products</li>
-						<li>Support</li>
+						<li><a href="#" class="nav-link underline">About</a></li>
+						<li><a href="#" class="nav-link underline">Carreers</a></li>
+						<li><a href="#" class="nav-link underline">Events</a></li>
+						<li><a href="#" class="nav-link underline">Products</a></li>
+						<li><a href="#" class="nav-link underline">Support</a></li>
 					</ul>
-					<img src="./images/icon-hamburger.svg" alt="menu button" class="nav-menu-btn" />
+					<button class="nav-menu-btn" data-menu-btn>
+						<img src="./images/icon-hamburger.svg" alt="menu button" />
+					</button>
+					<div class="nav-menu" data-menu>
+						<img src="./images/logo.svg" alt="logo" class="logo" />
+						<button class="close-btn"><img src="./images/icon-close.svg" alt="" data-menu-close-btn /></button>
+						<ul class="nav-menu-options">
+							<li><a href="#" class="nav-link underline">About</a></li>
+							<li><a href="#" class="nav-link underline">Carreers</a></li>
+							<li><a href="#" class="nav-link underline">Events</a></li>
+							<li><a href="#" class="nav-link underline">Products</a></li>
+							<li><a href="#" class="nav-link underline">Support</a></li>
+						</ul>
+					</div>
 				</nav>
 				<div class="main-heading">
 					<h1>Immersive experiences that deliver</h1>
@@ -81,19 +95,19 @@
 			<nav class="navbar">
 				<img src="./images/logo.svg" alt="logo" />
 				<ul class="footer-nav">
-					<li>About</li>
-					<li>Carreers</li>
-					<li>Events</li>
-					<li>Products</li>
-					<li>Support</li>
+					<li><a href="#" class="nav-link underline">About</a></li>
+					<li><a href="#" class="nav-link underline">Carreers</a></li>
+					<li><a href="#" class="nav-link underline">Events</a></li>
+					<li><a href="#" class="nav-link underline">Products</a></li>
+					<li><a href="#" class="nav-link underline">Support</a></li>
 				</ul>
 			</nav>
 			<div class="contact-info">
 				<ul class="social-media">
-					<li><img src="./images/icon-facebook.svg" alt="facebook" /></li>
-					<li><img src="./images/icon-twitter.svg" alt="twitter" /></li>
-					<li><img src="./images/icon-pinterest.svg" alt="pinterest" /></li>
-					<li><img src="./images/icon-instagram.svg" alt="instagram" /></li>
+					<li  class="nav-link underline"><a href="#"></a><img src="./images/icon-facebook.svg" alt="facebook" /></a></li>
+					<li  class="nav-link underline"><a href="#"></a><img src="./images/icon-twitter.svg" alt="twitter" /></a></li>
+					<li  class="nav-link underline"><a href="#"></a><img src="./images/icon-pinterest.svg" alt="pinterest" /></a></li>
+					<li  class="nav-link underline"><a href="#"></a><img src="./images/icon-instagram.svg" alt="instagram" /></a></li>
 				</ul>
 				<p>© 2021 Loopstudios. All rights reserved.</p>
 			</div>
