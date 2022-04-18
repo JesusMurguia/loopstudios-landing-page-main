@@ -175,6 +175,48 @@ body {
 	font-size: 1.25rem;
 }
 
+footer {
+	background-color: black;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-items: center;
+	padding-bottom: 2rem;
+}
+
+footer .navbar {
+	flex-direction: column;
+	align-items: center;
+}
+
+.footer-nav {
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	padding: 0;
+	margin-block: 2rem;
+}
+footer .navbar img {
+	height: min-content;
+	width: min-content;
+}
+
+.social-media {
+	list-style-type: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	gap: 1.25rem;
+	padding: 0;
+	margin-block: 2rem;
+}
+
+footer p {
+	color: var(--gray2);
+}
+
 #deep-earth {
 	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.5018382352941176) 26%, rgba(0, 0, 0, 0) 96%),
 		url(./images/mobile/image-deep-earth.jpg);
@@ -267,6 +309,38 @@ body {
 		justify-self: end;
 		height: fit-content;
 		align-self: center;
+	}
+
+	footer {
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+		padding-bottom: 2rem;
+		align-items: center;
+	}
+
+	footer .navbar {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.footer-nav {
+		flex-direction: row;
+	}
+	footer .navbar img {
+		height: min-content;
+		width: min-content;
+		align-self: stretch;
+	}
+
+	.social-media {
+		list-style-type: none;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: 1.25rem;
+		padding: 0;
+		margin-block: 2rem;
 	}
 }
 
